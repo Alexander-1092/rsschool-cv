@@ -14,4 +14,6 @@ function sortCitiesArray(arr) {
   });
 }
  ```
- 
+ 6. I have been  studying the frontend for over a year. [An example of a learning project I did](https://rolling-scopes-school.github.io/alexander-1092-JSFE2023Q4/coffee-house) 
+7. Master of Religious Science
+8. А2
