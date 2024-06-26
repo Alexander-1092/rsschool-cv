@@ -64,7 +64,21 @@
           </div>
         </section>
         <section class="project"></section>
-        <section class="code"></section>
+        <section class="code">
+          <div class="code__body">
+            <h2 class="code__title">Code:</h2>
+            <pre>
+              <code class="code__block-code">
+                function XO(str) {
+                  const xo = str.toLocaleLowerCase().split('')
+                  const x = xo.filter(element => element == 'x')
+                  const o = xo.filter(element => element == 'o')
+                   if (x.length == o.length || (!xo.includes('o') && !xo.includes('x')))
+                   {return true} else {return false}}
+              </code>
+            </pre>
+          </div>
+        </section>
         <section class="education"></section>
       </div>
     </main>
