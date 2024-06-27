@@ -65,28 +65,20 @@ a {
     background-color: #fff;
     border-radius: 25px;
     cursor: pointer;
+    font-weight: 700;
     transition: all 0.7s;
 }
 
 .hero__btn:hover {
     background-color: #000000;
+    color: #fff;
 }
 
 .hero__btn:focus {
     background-color: #000000;
+    color: #fff;
 }
 
-.hero__btn:hover>a {
-    color: #ffffff;
-}
-
-.hero__btn:focus>a {
-    color: #ffffff;
-}
-
-.hero__link {
-    font-weight: 700;
-}
 
 .hero__btn:active {
     background-color: #804545;
@@ -141,6 +133,37 @@ a {
     margin-bottom: 100px;
 }
 
+.project__body {
+    text-align: center;
+}
+
+.project__title {
+    margin-bottom: 25px;
+}
+
+.slider {
+    position: relative;
+    overflow: hidden;
+}
+
+.slider__track {
+    display: flex;
+}
+
+.slider__slide {
+    min-width: 100%;
+    object-fit: contain;
+}
+
+
+.slider__slide-link {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 24px;
+
+}
 
 .code {
     margin-bottom: 100px;
