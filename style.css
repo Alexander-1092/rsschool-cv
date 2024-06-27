@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 a {
     text-decoration: none;
     color: #000000;
@@ -62,6 +66,7 @@ a {
 .hero__btn {
     padding: 10px 0px;
     border: 2px solid #000000;
+    text-align: center;
     background-color: #fff;
     border-radius: 25px;
     cursor: pointer;
@@ -149,7 +154,7 @@ a {
 
 .slider__track {
     display: flex;
-
+    transition: all 1s;
 }
 
 
