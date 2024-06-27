@@ -157,6 +157,19 @@ a {
     font-size: 20px;
 }
 
+.education {
+    margin-bottom: 100px;
+    text-align: center;
+}
+
+.education__studies {
+    margin: 20px 0px;
+    padding: 20px 0px;
+    display: flex;
+    justify-content: space-around;
+    border: 1px solid #000000;
+}
+
 .footer__logo-img {
     width: 100px;
 }
