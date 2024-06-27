@@ -104,6 +104,16 @@ a {
     border-radius: 13px;
 }
 
+
+.about-me__body {
+    text-align: center;
+}
+
+
+.about-me__title {
+    margin-bottom: 30px;
+}
+
 .my-skills__box-img>img {
     width: 40px;
 }
