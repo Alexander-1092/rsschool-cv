@@ -137,6 +137,26 @@ a {
     width: 100px;
 }
 
+.project {
+    margin-bottom: 100px;
+}
+
+
+.code {
+    margin-bottom: 100px;
+}
+
+.code__body {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+.code__block-code {
+    font-size: 20px;
+}
+
 .footer__logo-img {
     width: 100px;
 }
