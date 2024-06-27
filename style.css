@@ -3,3 +3,11 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+.my-skills__box-img>img {
+    width: 40px;
+}
+
+.footer__logo-img {
+    width: 100px;
+}
