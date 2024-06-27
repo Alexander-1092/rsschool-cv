@@ -28,6 +28,7 @@ a {
 
 .menu__link {
     font-weight: 700;
+    transition: all 0.5s;
 }
 
 .menu__link:hover {
@@ -106,6 +107,7 @@ a {
 
 
 .about-me__body {
+    margin-bottom: 100px;
     text-align: center;
 }
 
@@ -114,8 +116,25 @@ a {
     margin-bottom: 30px;
 }
 
+.my-skills {
+    margin-bottom: 100px;
+}
+
+.my-skills__body {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+.my-skills__box-img {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 50px;
+}
+
 .my-skills__box-img>img {
-    width: 40px;
+    width: 100px;
 }
 
 .footer__logo-img {
