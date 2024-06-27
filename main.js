@@ -17,7 +17,7 @@ const showSlideBack = (size) => {
 arrowNext.addEventListener("click", (e) => {
   let sizeBox =
     e.target.parentNode.parentNode.firstElementChild.childNodes[1].offsetWidth;
-  if (next < sizeBox * 4) {
+  if (next < sizeBox * 5) {
     showSlideForward(sizeBox);
   }
 });
