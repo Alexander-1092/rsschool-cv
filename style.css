@@ -4,6 +4,47 @@
     box-sizing: border-box;
 }
 
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0px 40px;
+    overflow: hidden;
+}
+
+.menu {
+    padding: 20px 0px;
+}
+
+.menu__list {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+}
+
+.menu__link {
+    text-decoration: none;
+    color: #000000;
+    font-weight: 700;
+}
+
+.menu__link:hover {
+    color: #00000086;
+}
+
+.menu__link:active {
+    color: #b42525a2;
+}
+
+.menu__link:focus {
+    color: #00000086;
+}
+
+
+
+
+
+
 .my-skills__box-img>img {
     width: 40px;
 }
@@ -11,4 +52,3 @@
 .footer__logo-img {
     width: 100px;
 }
-
