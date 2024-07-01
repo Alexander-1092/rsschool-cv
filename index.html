@@ -41,7 +41,7 @@
       <section class="hero">
         <div class="hero__box">
           <h1 class="hero__title">Antonov Alexander</h1>
-          <span class="hero__text">Junior Front End Developer 32;years old, Kazan</span>
+          <span class="hero__text">Junior Front End Developer 32&nbsp;years old, Kazan</span>
           <a class="hero__btn" href="#address">Contact</a>
         </div>
         <div class="hero__img">
@@ -123,6 +123,12 @@
           <h2 class="code__title">Code:</h2>
           <pre>
               <code class="code__block-code">
+                function XO(str) {
+                  const xo = str.toLocaleLowerCase().split('')
+                  const x = xo.filter(element =&gt element == 'x')
+                  const o = xo.filter(element =&gt element == 'o')
+                   if (x.length == o.length || (!xo.includes('o') &amp;&amp; !xo.includes('x')))
+                   {return true} else {return false}}
               </code>
             </pre>
         </div>
@@ -161,7 +167,7 @@
           </ul>
         </address>
         <div class="footer__copyright">
-          <span class="footer__copyright-text"> все прова защищены 2024</span>
+          <span class="footer__copyright-text">&copy; все прова защищены 2024</span>
           <a href="https://rs.school/" class="footer__logo-link" target="_blank">
             <img src="./assets/svg/rs_school_js.svg" alt="logo course" class="footer__logo-img">
           </a>
