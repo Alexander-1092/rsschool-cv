@@ -125,8 +125,8 @@
               <code class="code__block-code">
                 function XO(str) {
                   const xo = str.toLocaleLowerCase().split('')
-                  const x = xo.filter(element => element == 'x')
-                  const o = xo.filter(element => element == 'o')
+                  const x = xo.filter(element =&gt element == 'x')
+                  const o = xo.filter(element =&gt element == 'o')
                    if (x.length == o.length || (!xo.includes('o') &amp;&amp; !xo.includes('x')))
                    {return true} else {return false}}
               </code>
