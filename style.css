@@ -3,3 +3,288 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+html {
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+    color: #000000;
+}
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0px 40px;
+    overflow: hidden;
+}
+
+.menu {
+    padding: 20px 0px;
+}
+
+.menu__list {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+}
+
+.menu__link {
+    font-weight: 700;
+    transition: all 0.5s;
+}
+
+.menu__link:hover {
+    color: #00000086;
+}
+
+.menu__link:active {
+    color: #b42525a2;
+}
+
+.menu__link:focus {
+    color: #00000086;
+}
+
+.hero {
+    padding: 100px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hero__box {
+    max-width: 200px;
+    margin-left: 5vw;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+
+.hero__btn {
+    padding: 10px 0px;
+    border: 2px solid #000000;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 25px;
+    cursor: pointer;
+    font-weight: 700;
+    transition: all 0.7s;
+}
+
+.hero__btn:hover {
+    background-color: #000000;
+    color: #fff;
+}
+
+.hero__btn:focus {
+    background-color: #000000;
+    color: #fff;
+}
+
+
+.hero__btn:active {
+    background-color: #804545;
+}
+
+.hero__img {
+    max-width: 50%;
+    max-height: 50%;
+}
+
+.hero__img>img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    overflow: hidden;
+    border-radius: 13px;
+}
+
+
+.about-me__body {
+    margin-bottom: 100px;
+    text-align: center;
+}
+
+
+.about-me__title {
+    margin-bottom: 30px;
+}
+
+.my-skills {
+    margin-bottom: 100px;
+}
+
+.my-skills__body {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+.my-skills__box-img {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 50px;
+}
+
+.my-skills__box-img>img {
+    width: 100px;
+}
+
+.project {
+    margin-bottom: 100px;
+}
+
+.project__body {
+    text-align: center;
+}
+
+.project__title {
+    margin-bottom: 25px;
+}
+
+.slider {
+    position: relative;
+    overflow: hidden;
+}
+
+
+.slider__track {
+    display: flex;
+    transition: all 1s;
+}
+
+
+.slider__box {
+    min-width: 100%;
+    height: 100vh;
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.slider__img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.slider__link {
+    padding-top: 15px 0px;
+    font-size: 34px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.slider__link:hover {
+    transform: scale(1.2);
+}
+
+
+.slider__arrow-next>img {
+    position: absolute;
+    top: 50%;
+    right: 0px;
+    width: 120px;
+    transform: translateY(-50%);
+    transition: opacity 0.5s;
+}
+
+.slider__arrow-next>img:hover {
+    opacity: 0.7;
+}
+
+.slider__arrow-prev>img {
+    position: absolute;
+    transform: translateY(-50%) rotate(180deg);
+    top: 50%;
+    left: 0;
+    width: 120px;
+    transition: opacity 0.5s;
+}
+
+.slider__arrow-prev>img:hover {
+    opacity: 0.6;
+}
+
+
+.code {
+    margin-bottom: 100px;
+}
+
+.code__body {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+.code__block-code {
+    font-size: 20px;
+}
+
+.education {
+    margin-bottom: 100px;
+    text-align: center;
+}
+
+.education__studies {
+    margin: 20px 0px;
+    padding: 20px 0px;
+    display: flex;
+    justify-content: space-around;
+    border: 1px solid #000000;
+}
+
+.footer__body {
+    margin-bottom: 20px;
+}
+
+
+.footer__adress {
+    margin-bottom: 50px;
+}
+
+.footer__list {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+}
+
+.footer__item {
+    transition: all 1s;
+}
+
+.footer__item:hover {
+    transform: scale(1.5);
+}
+
+.footer__item:focus {
+    transform: scale(1.5);
+}
+
+.footer__item>a:active {
+    color: #804545;
+}
+
+.footer__copyright {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.footer__logo-img {
+    width: 100px;
+    transition: all 1s;
+}
+
+.footer__logo-img:hover {
+    transform: scale(1.5);
+    opacity: 0.7;
+}

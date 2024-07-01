@@ -1,13 +1,180 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-  </head>
-  <body>
-    <header class="header"></header>
-    <main class="main"></main>
-    <footer class="footer"></footer>
-  </body>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CV</title>
+  <link rel="stylesheet" href="./style.css">
+  <script defer src="./main.js"></script>
+</head>
+
+<body>
+  <header class="header">
+    <div class="container">
+      <nav class="menu">
+        <ul class="menu__list">
+          <li class="menu__item">
+            <a href="#about" class="menu__link">About me</a>
+          </li>
+          <li class="menu__item">
+            <a href="#skills" class="menu__link">My skills </a>
+          </li>
+          <li class="menu__item">
+            <a href="#my-code" class="menu__link">Code </a>
+          </li>
+          <li class="menu__item">
+            <a href="#my-project" class="menu__link">Projects </a>
+          </li>
+          <li class="menu__item">
+            <a href="#educ" class="menu__link">Education/English </a>
+          </li>
+          <li class="menu__item">
+            <a href="#address" class="menu__link">Contacts</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main class="main">
+    <div class="container">
+      <section class="hero">
+        <div class="hero__box">
+          <h1 class="hero__title">Antonov Alexander</h1>
+          <span class="hero__text">Junior Front End Developer 32&nbsp;years old, Kazan</span>
+          <a class="hero__btn" href="#address">Contact</a>
+        </div>
+        <div class="hero__img">
+          <img src="./assets/img/main-image2.jpg" alt="my photo">
+        </div>
+      </section>
+      <section class="about-me" id="about">
+        <div class="about-me__body">
+          <h2 class="about-me__title">About me</h2>
+          <p class="about-me__text">Become a frontend developer</p>
+        </div>
+      </section>
+      <section class="my-skills" id="skills">
+        <div class="my-skills__body">
+          <h2 class="my-skills__title">My skills</h2>
+          <div class="my-skills__box-img">
+            <img src="./assets/svg/javascript-1.svg" alt="icon js">
+            <img src="./assets/svg/html-1.svg" alt="icon html">
+            <img src="./assets/svg/css-3.svg" alt="icon css">
+            <img src="./assets/svg/sass-1.svg" alt="icon scss">
+            <img src="./assets/svg/python-5.svg" alt="icon python">
+            <img src="./assets/svg/git-icon.svg" alt="icon git">
+          </div>
+        </div>
+      </section>
+      <section class="project" id="my-project">
+        <div class="project__body">
+          <h2 class="project__title">My projects</h2>
+          <div class="slider project__slider">
+            <div class="slider__track">
+              <div class="slider__box">
+                <img class="slider__img" src="./assets/img/prj1.PNG" alt="my project">
+                <a class="slider__link"
+                  href="https://rolling-scopes-school.github.io/alexander-1092-JSFE2023Q4/coffee-house/"
+                  target="_blank">Project link</a>
+              </div>
+              <div class="slider__box">
+                <img class="slider__img" src="./assets/img/prj2.PNG" alt="my project">
+                <a class="slider__link"
+                  href="https://rolling-scopes-school.github.io/alexander-1092-JSFE2023Q4/hangman/"
+                  target="_blank">Project link</a>
+              </div>
+              <div class="slider__box">
+                <img class="slider__img" src="./assets/img/prj3.PNG" alt="my project">
+                <a class="slider__link"
+                  href="https://rolling-scopes-school.github.io/alexander-1092-JSFEPRESCHOOL2023Q2/library/"
+                  target="_blank">Project link</a>
+              </div>
+              <div class="slider__box">
+                <img class="slider__img" src="./assets/img/prj4.PNG" alt="my project">
+                <a class="slider__link"
+                  href="https://rolling-scopes-school.github.io/alexander-1092-JSFEPRESCHOOL2023Q2/audio-player/"
+                  target="_blank">Project link</a>
+              </div>
+              <div class="slider__box">
+                <img class="slider__img" src="./assets/img/prj5.PNG" alt="my project">
+                <a class="slider__link"
+                  href="https://rolling-scopes-school.github.io/alexander-1092-JSFEPRESCHOOL2023Q2/memory-game/"
+                  target="_blank">Project link</a>
+              </div>
+              <div class="slider__box">
+                <img class="slider__img" src="./assets/img/prj6.PNG" alt="my project">
+                <a class="slider__link"
+                  href="https://rolling-scopes-school.github.io/alexander-1092-JSFEPRESCHOOL2023Q2/image-galery/"
+                  target="_blank">Project link</a>
+              </div>
+            </div>
+            <div class="slider__arrow-next">
+              <img src="./assets/svg/right_arrow.svg" alt="arrow">
+            </div>
+            <div class="slider__arrow-prev">
+              <img src="./assets/svg/right_arrow.svg" alt="arrow">
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="code" id="my-code">
+        <div class="code__body">
+          <h2 class="code__title">Code:</h2>
+          <pre>
+              <code class="code__block-code">
+                function XO(str) {
+                  const xo = str.toLocaleLowerCase().split('')
+                  const x = xo.filter(element =&gt element == 'x')
+                  const o = xo.filter(element =&gt element == 'o')
+                   if (x.length == o.length || (!xo.includes('o') &amp;&amp; !xo.includes('x')))
+                   {return true} else {return false}}
+              </code>
+            </pre>
+        </div>
+      </section>
+      <section class="education" id="educ">
+        <h2 class="education__title">Education</h2>
+        <div class="education__studies">
+          <span class="education__university">Kazan State University </span>
+          <span class="education__qualification">Master of Religious Science
+          </span>
+          <span class="education__year">Year of graduation 2017 </span>
+        </div>
+        <h2 class="education__title">English</h2>
+        <div class="education__studies">
+          <span class="education__language">English Language</span>
+          <span class="education__level">A2</span>
+        </div>
+      </section>
+    </div>
+  </main>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__body">
+        <address class="footer__adress" id="address">
+          <ul class="footer__list">
+            <li class="footer__item">
+              <a href="mailto:Alex-Sadr1092@yandex.ru" class="footer__link"
+                target="_blank">E-mail:Alex-Sadr1092@yandex.ru</a>
+            </li>
+            <li class="footer__item">
+              <a href="" class="footer__link">Discord: Alexander-1092</a>
+            </li>
+            <li class="footer__item">
+              <a href="https://github.com/Alexander-1092" class="footer__link">Github: Alexander-1092</a>
+            </li>
+          </ul>
+        </address>
+        <div class="footer__copyright">
+          <span class="footer__copyright-text">&copy; все прова защищены 2024</span>
+          <a href="https://rs.school/" class="footer__logo-link" target="_blank">
+            <img src="./assets/svg/rs_school_js.svg" alt="logo course" class="footer__logo-img">
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+
 </html>
