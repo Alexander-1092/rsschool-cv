@@ -130,7 +130,14 @@ a {
     gap: 50px;
 }
 
-.my-skills__box-img>img {
+.my-skills__box-img>li {
+    list-style: none;
+}
+
+
+
+
+.my-skills__box-img>li>img {
     width: 100px;
 }
 
@@ -186,6 +193,13 @@ a {
     transform: scale(1.2);
 }
 
+.slider__arrow-next {
+    cursor: pointer;
+}
+
+.slider__arrow-prev {
+    cursor: pointer;
+}
 
 .slider__arrow-next>img {
     position: absolute;
