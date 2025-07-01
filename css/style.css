@@ -43,7 +43,7 @@ body .header {
   left: 0;
   width: 100%;
   z-index: 1000;
-  background: white;
+  background: rgba(255, 255, 255, 0.822);
 }
 body .header .container .nav .list {
   display: flex;
@@ -51,8 +51,14 @@ body .header .container .nav .list {
   margin: 0.625rem 0rem;
 }
 body .header .container .nav .list li .link {
+  display: inline-block;
   font-family: "PlayfairDisplay", sans-serif;
   font-weight: 600;
+  transition: all 0.5s ease;
+}
+body .header .container .nav .list li .link:hover {
+  transform: scale(1.5);
+  color: rgba(158, 158, 158, 0.9529411765);
 }
 body .main .container .hero {
   margin-top: 3.75rem;
