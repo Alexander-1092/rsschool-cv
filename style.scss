@@ -1,0 +1,55 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0px 40px;
+    overflow: hidden;
+}
+
+a {
+    text-decoration: none;
+    color: #000000;
+}
+
+li {
+    list-style-type: none;
+}
+
+body {
+    overflow: hidden;
+    .header {
+        .container {
+            .nav {
+                position: sticky;
+                .list {
+                    display: flex;
+                    justify-content: space-between;
+                    li {
+                        .link {
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .main {
+        .container {
+            .hero {
+                .hero__text {
+                }
+                .hero__img {
+                    img {
+                        max-width: 500px;
+                    }
+                }
+            }
+        }
+    }
+    .footer {
+    }
+}
