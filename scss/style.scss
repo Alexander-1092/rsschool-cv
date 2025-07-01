@@ -21,7 +21,6 @@ li {
 }
 
 body {
-    overflow: hidden;
     .header {
         .container {
             .nav {
@@ -44,7 +43,7 @@ body {
                 }
                 .hero__img {
                     img {
-                        max-width: 500px;
+                        max-width: 300px;
                     }
                 }
             }

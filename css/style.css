@@ -20,9 +20,6 @@ li {
   list-style-type: none;
 }
 
-body {
-  overflow: hidden;
-}
 body .header .container .nav {
   position: sticky;
 }
@@ -31,5 +28,5 @@ body .header .container .nav .list {
   justify-content: space-between;
 }
 body .main .container .hero .hero__img img {
-  max-width: 500px;
+  max-width: 300px;
 }
