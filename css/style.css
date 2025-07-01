@@ -30,3 +30,6 @@ body .header .container .nav .list {
 body .main .container .hero .hero__img img {
   max-width: 300px;
 }
+body .footer .container .contact .contact__list .contact__item img {
+  max-width: 100px;
+}

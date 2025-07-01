@@ -50,5 +50,18 @@ body {
         }
     }
     .footer {
+        .container {
+            .contact {
+                .contact__title {
+                }
+                .contact__list {
+                    .contact__item {
+                        img {
+                            max-width: 100px;
+                        }
+                    }
+                }
+            }
+        }
     }
 }
