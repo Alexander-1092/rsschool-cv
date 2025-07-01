@@ -1,3 +1,11 @@
+@font-face {
+  font-family: "PlayfairDisplay";
+  src: url("../assets/font/PlayfairDisplay.ttf"), url("../assets/font/PlayfairDisplay-Italic.ttf");
+}
+@font-face {
+  font-family: "Lora";
+  src: url("../assets/font/Lora.ttf"), url("../assets/font/Lora-Italic.ttf");
+}
 * {
   margin: 0;
   padding: 0;
@@ -5,9 +13,9 @@
 }
 
 .container {
-  max-width: 1440px;
+  max-width: 90rem;
   margin: 0 auto;
-  padding: 0px 40px;
+  padding: 0rem 2.5rem;
   overflow: hidden;
 }
 
@@ -20,15 +28,40 @@ li {
   list-style-type: none;
 }
 
-body .header .container .nav {
-  position: sticky;
+h1,
+h2,
+h3 {
+  font-family: "PlayfairDisplay", sans-serif;
+}
+
+body {
+  font-family: "Lora", sans-serif;
+}
+body .header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  background: white;
 }
 body .header .container .nav .list {
   display: flex;
   justify-content: space-between;
+  margin: 0.625rem 0rem;
+}
+body .header .container .nav .list li .link {
+  font-family: "PlayfairDisplay", sans-serif;
+  font-weight: 600;
+}
+body .main .container .hero {
+  margin-top: 3.75rem;
 }
 body .main .container .hero .hero__img img {
-  max-width: 300px;
+  max-width: 18.75rem;
+}
+body .main .container .skills .skills__box .skills__item .skills__img {
+  max-width: 6.25rem;
 }
 body .footer .container .contact .contact__list .contact__item img {
   max-width: 100px;
