@@ -34,9 +34,20 @@ h2,
 h3 {
     font-family: "PlayfairDisplay", sans-serif;
 }
+h2 {
+    text-align: center;
+    margin-bottom: 3.125rem;
+    font-size: 32px;
+    color: #e0dada;
+    text-shadow: 2px 4px 4px rgba(0, 0, 0, 0.5);
+}
 
 body {
     font-family: "Lora", sans-serif;
+    font-size: 1.125rem;
+    background:
+        linear-gradient(rgba(255, 255, 255, 0.527), rgba(255, 255, 255, 0.411)),
+        url(/assets/img/main/main9.jpg) no-repeat center center / cover;
     .header {
         position: fixed;
         top: 0;
@@ -49,6 +60,7 @@ body {
                 .list {
                     display: flex;
                     justify-content: space-between;
+                    align-items: center;
                     margin: 0.625rem 0rem;
                     li {
                         .link {
@@ -69,16 +81,75 @@ body {
     .main {
         .container {
             .hero {
-                margin-top: 3.75rem;
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                margin: 6.25rem 0rem;
                 .hero__text {
+                    h1 {
+                        font-size: 3rem;
+                        font-weight: normal;
+                    }
+                    p {
+                        font-size: 1.25rem;
+                    }
                 }
                 .hero__img {
                     img {
-                        max-width: 18.75rem;
+                        border-radius: 11.25rem;
+                        max-width: 25rem;
                     }
                 }
             }
             .about-me {
+                margin-bottom: 6.25rem;
+                .about-me__title {
+                }
+                .about-me__box {
+                    position: relative;
+                    display: flex;
+                    justify-content: space-around;
+                    align-items: center;
+                    flex-direction: row-reverse;
+                    overflow: hidden;
+
+                    .about-me__text {
+                        position: relative;
+                        z-index: 100;
+                        p {
+                            // max-width: 25rem;
+                            font-size: 1.5625rem;
+                            line-height: 1.5;
+                            color: #e0dada;
+                            text-shadow: 6px 4px 4px rgba(0, 0, 0, 0.5);
+                        }
+                    }
+                    .about-me-img {
+                        flex: 0 0 50%;
+
+                        .about-me__photo {
+                            max-width: 15.625rem;
+                            object-fit: cover;
+
+                            &:nth-of-type(1) {
+                                position: relative;
+                                transform: rotate(25deg) translate(1.875rem, 0rem);
+                                z-index: 2;
+                            }
+                            &:nth-of-type(2) {
+                                position: relative;
+                                z-index: 5;
+                                transform: rotate(-25deg) translate(-3.125rem, 3.125rem);
+                            }
+                            &:nth-of-type(3) {
+                                transform: rotate(25deg) translate(80px, -80px);
+                            }
+                            &:nth-of-type(4) {
+                                transform: rotate(-25deg) translate(120px, -40px);
+                            }
+                        }
+                    }
+                }
             }
             .skills {
                 .skills__box {
