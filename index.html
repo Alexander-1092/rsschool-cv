@@ -112,23 +112,31 @@
                 </section>
                 <section class="code">
                     <h2 class="title code__title">Code</h2>
-                    <pre><code class="code__my-code">
-                        const findOdd = arr => {
-                                const obj = {};
-                                arr.forEach(elem => {obj[elem] ? (obj[elem] += 1) : (obj[elem] = 1);});
-                                for (const key in obj) {
-                                    if (obj[key] % 2 !== 0) {
-                                    return +key;
-                                    }
-                                }};
+                    <div class="code__box">
+                        <div class="code__video">
+                            <video autoplay loop src="./assets/media/code/mixkit.mp4"></video>
+                        </div>
+                        <div class="code__precode">
+                            <pre><code class="code__my-code">
+const findOdd = arr => {
+const obj = {};
+arr.forEach(elem => {obj[elem] ? (obj[elem] += 1) : (obj[elem] = 1);});
+for (const key in obj) {
+if (obj[key] % 2 !== 0) {
+return +key;}}};
                     </code></pre>
-                    <pre><code class="code__my-code">
-                        const spinWords = str => str
-                        .split(' ')
-                        .map(word => word.length > 4 ? [...word]
-                        .reverse()
-                        .join('') : word).join(' ')
+                            <pre><code class="code__my-code">
+const spinWords = str => str
+    .split(' ')
+    .map(word => word.length > 4 ? [...word]
+    .reverse()
+    .join('') : word).join(' ')
                     </code></pre>
+                        </div>
+
+
+                    </div>
+
                 </section>
                 <section class="projects">
                     <h2 class="title projects__title">Project</h2>
