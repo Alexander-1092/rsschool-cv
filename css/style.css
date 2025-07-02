@@ -132,8 +132,24 @@ body .main .container .about-me .about-me__box .about-me-img .about-me__photo:nt
 body .main .container .about-me .about-me__box .about-me-img .about-me__photo:nth-of-type(4) {
   transform: rotate(-25deg) translate(120px, -40px);
 }
+body .main .container .skills {
+  margin-bottom: 6.25rem;
+}
+body .main .container .skills .skills__box {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid: 0.625rem;
+}
+body .main .container .skills .skills__box .skills__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0px;
+}
 body .main .container .skills .skills__box .skills__item .skills__img {
-  max-width: 6.25rem;
+  margin-bottom: 1.5625rem;
+  max-width: 100px;
 }
 body .footer .container .contact .contact__list .contact__item img {
   max-width: 100px;

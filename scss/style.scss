@@ -103,8 +103,6 @@ body {
             }
             .about-me {
                 margin-bottom: 6.25rem;
-                .about-me__title {
-                }
                 .about-me__box {
                     position: relative;
                     display: flex;
@@ -152,21 +150,31 @@ body {
                 }
             }
             .skills {
+                margin-bottom: 6.25rem;
                 .skills__box {
+                    display: grid;
+                    grid-template-columns: repeat(4, 1fr);
+                    grid: .625rem;
                     .skills__item {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        margin: 20px 0px;
                         .skills__img {
-                            max-width: 6.25rem;
+                            margin-bottom: 1.5625rem;
+                            max-width: 100px;
                         }
                     }
                 }
+            }
+            .code {
             }
         }
     }
     .footer {
         .container {
             .contact {
-                .contact__title {
-                }
                 .contact__list {
                     .contact__item {
                         img {
