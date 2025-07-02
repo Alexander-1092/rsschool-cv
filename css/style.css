@@ -115,6 +115,7 @@ body .main .container .about-me .about-me__box .about-me-img {
 body .main .container .about-me .about-me__box .about-me-img .about-me__photo {
   max-width: 15.625rem;
   object-fit: cover;
+  transition: all 0.5 ease;
 }
 body .main .container .about-me .about-me__box .about-me-img .about-me__photo:nth-of-type(1) {
   position: relative;
@@ -127,10 +128,16 @@ body .main .container .about-me .about-me__box .about-me-img .about-me__photo:nt
   transform: rotate(-25deg) translate(-3.125rem, 3.125rem);
 }
 body .main .container .about-me .about-me__box .about-me-img .about-me__photo:nth-of-type(3) {
+  position: relative;
   transform: rotate(25deg) translate(80px, -80px);
 }
 body .main .container .about-me .about-me__box .about-me-img .about-me__photo:nth-of-type(4) {
+  position: relative;
   transform: rotate(-25deg) translate(120px, -40px);
+}
+body .main .container .about-me .about-me__box .about-me-img .about-me__photo:hover {
+  cursor: pointer;
+  z-index: 100;
 }
 body .main .container .skills {
   margin-bottom: 6.25rem;

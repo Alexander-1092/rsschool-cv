@@ -120,10 +120,11 @@
                             <pre><code class="code__my-code">
 const findOdd = arr => {
 const obj = {};
-arr.forEach(elem => {obj[elem] ? (obj[elem] += 1) : (obj[elem] = 1);});
-for (const key in obj) {
-if (obj[key] % 2 !== 0) {
-return +key;}}};
+    arr.forEach(elem => {obj[elem] ? (obj[elem] += 1) : (obj[elem] = 1);});
+    for (const key in obj) {
+        if (obj[key] % 2 !== 0) {
+    return +key;}}
+};
                     </code></pre>
                             <pre><code class="code__my-code">
 const spinWords = str => str

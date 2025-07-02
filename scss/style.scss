@@ -128,6 +128,7 @@ body {
                         .about-me__photo {
                             max-width: 15.625rem;
                             object-fit: cover;
+                            transition: all 0.5 ease;
 
                             &:nth-of-type(1) {
                                 position: relative;
@@ -140,10 +141,16 @@ body {
                                 transform: rotate(-25deg) translate(-3.125rem, 3.125rem);
                             }
                             &:nth-of-type(3) {
+                                position: relative;
                                 transform: rotate(25deg) translate(80px, -80px);
                             }
                             &:nth-of-type(4) {
+                                position: relative;
                                 transform: rotate(-25deg) translate(120px, -40px);
+                            }
+                            &:hover {
+                                cursor: pointer;
+                                z-index: 100;
                             }
                         }
                     }
