@@ -16,7 +16,6 @@
   max-width: 90rem;
   margin: 0 auto;
   padding: 0rem 2.5rem;
-  overflow: hidden;
 }
 
 a {
@@ -193,6 +192,25 @@ body .main .container .code .code__box .code__precode .code__my-code {
   z-index: 5;
   font-size: 1.5rem;
   color: #ffffff;
+}
+body .main .container .projects {
+  margin-bottom: 6.25rem;
+}
+body .main .container .projects .projects__box {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.25rem;
+}
+body .main .container .projects .projects__box .projects__item {
+  padding: 0.625rem;
+  width: 100%;
+  height: 100%;
+  border: 1px solid black;
+}
+body .main .container .projects .projects__box .projects__item .projects__img {
+  width: 100%;
+  height: 80%;
+  object-fit: fill;
 }
 body .footer .container .contact .contact__list .contact__item img {
   max-width: 100px;
