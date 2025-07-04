@@ -12,6 +12,11 @@
   box-sizing: border-box;
 }
 
+html,
+body {
+  scroll-behavior: smooth;
+}
+
 .container {
   max-width: 90rem;
   margin: 0 auto;
@@ -91,6 +96,7 @@ body .main .container .hero .hero__img img {
   max-width: 25rem;
 }
 body .main .container .about-me {
+  scroll-margin-top: 3.125rem;
   margin-bottom: 6.25rem;
 }
 body .main .container .about-me .about-me__box {
@@ -142,6 +148,7 @@ body .main .container .about-me .about-me__box .about-me-img .about-me__photo:ho
   z-index: 100;
 }
 body .main .container .skills {
+  scroll-margin-top: 3.125rem;
   margin-bottom: 6.25rem;
 }
 body .main .container .skills .skills__box {
@@ -161,6 +168,7 @@ body .main .container .skills .skills__box .skills__item .skills__img {
   max-width: 100px;
 }
 body .main .container .code {
+  scroll-margin-top: 3.125rem;
   margin-bottom: 6.25rem;
 }
 body .main .container .code .code__box {
@@ -197,6 +205,7 @@ body .main .container .code .code__box .code__precode .code__my-code {
   color: #ffffff;
 }
 body .main .container .projects {
+  scroll-margin-top: 3.125rem;
   margin-bottom: 6.25rem;
 }
 body .main .container .projects .projects__box {
@@ -241,6 +250,9 @@ body .main .container .projects .projects__box .projects__item .projects__link {
 body .main .container .projects .projects__box .projects__item .projects__link:hover {
   background-color: rgba(110, 151, 201, 0.9725490196);
 }
+body .main .container .education {
+  scroll-margin-top: 3.125rem;
+}
 body .main .container .education .education__table {
   width: 100%;
   margin-bottom: 1.875rem;
@@ -268,6 +280,7 @@ body .main .container .education .education__table tbody .education__year {
   text-align: center;
 }
 body .footer .container .contact {
+  scroll-margin-top: 3.125rem;
   margin-bottom: 6.25rem;
 }
 body .footer .container .contact .contact__list {

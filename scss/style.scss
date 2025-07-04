@@ -13,6 +13,11 @@
     box-sizing: border-box;
 }
 
+html,
+body {
+    scroll-behavior: smooth;
+}
+
 .container {
     max-width: 90rem;
     margin: 0 auto;
@@ -88,12 +93,12 @@ body {
                 margin: 6.25rem 0rem;
                 .hero__text {
                     h1 {
-                        color: #051427f8;;
+                        color: #051427f8;
                         font-size: 3rem;
                         font-weight: normal;
                     }
                     p {
-                        color: #051427f8;;
+                        color: #051427f8;
                         font-size: 1.25rem;
                     }
                 }
@@ -105,6 +110,7 @@ body {
                 }
             }
             .about-me {
+                scroll-margin-top: 3.125rem;
                 margin-bottom: 6.25rem;
                 .about-me__box {
                     position: relative;
@@ -160,6 +166,7 @@ body {
                 }
             }
             .skills {
+                scroll-margin-top: 3.125rem;
                 margin-bottom: 6.25rem;
                 .skills__box {
                     display: grid;
@@ -179,6 +186,7 @@ body {
                 }
             }
             .code {
+                scroll-margin-top: 3.125rem;
                 margin-bottom: 6.25rem;
                 .code__box {
                     padding: 6.25rem 0rem;
@@ -216,6 +224,7 @@ body {
                 }
             }
             .projects {
+                scroll-margin-top: 3.125rem;
                 margin-bottom: 6.25rem;
                 .projects__box {
                     display: grid;
@@ -266,6 +275,7 @@ body {
                 }
             }
             .education {
+                scroll-margin-top: 3.125rem;
                 // background: url(../assets/img/education/yale-university-0.jpg) no-repeat center center / cover;
 
                 .education__table {
@@ -302,6 +312,7 @@ body {
     .footer {
         .container {
             .contact {
+                scroll-margin-top: 3.125rem;
                 margin-bottom: 6.25rem;
                 .contact__list {
                     display: grid;
