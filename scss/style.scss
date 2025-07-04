@@ -79,6 +79,21 @@ body {
                                 color: #9e9e9ef3;
                             }
                         }
+                        .nav__transl {
+                            appearance: none;
+                            border: none;
+                            background-color: transparent;
+                            font-size: 18px;
+                            font-family: "Lora", sans-serif;
+                            &:focus {
+                                outline: none;
+                                border-color: transparent;
+                            }
+                            option {
+                                font-size: 18px;
+                                font-family: "Lora", sans-serif;
+                            }
+                        }
                     }
                 }
             }
@@ -260,7 +275,7 @@ body {
                             max-width: 9.375rem;
                             height: auto;
                             align-self: flex-end;
-                            padding: .625rem 1.25rem;
+                            padding: 0.625rem 1.25rem;
                             background-color: #174883f8;
                             text-align: center;
                             border-radius: 25px;

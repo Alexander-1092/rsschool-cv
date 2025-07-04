@@ -154,8 +154,18 @@ const englTranslatoon = [
   "Elementary",
 ];
 
+const navTransl = document.querySelector(".nav__transl");
+const selectValue = navTransl.value;
+console.log(selectValue);
+
 const translat = (dictionary) => {
   elemTranslation.forEach((element, index) => {
     element.textContent = dictionary[index];
   });
 };
+
+navTransl.addEventListener("change", () =>
+  navTransl.value === "ru"
+    ? translat(rusTranslation)
+    : translat(englTranslatoon)
+);

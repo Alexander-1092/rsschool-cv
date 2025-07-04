@@ -76,6 +76,21 @@ body .header .container .nav .list li .link:hover {
   transform: scale(1.5);
   color: rgba(158, 158, 158, 0.9529411765);
 }
+body .header .container .nav .list li .nav__transl {
+  appearance: none;
+  border: none;
+  background-color: transparent;
+  font-size: 18px;
+  font-family: "Lora", sans-serif;
+}
+body .header .container .nav .list li .nav__transl:focus {
+  outline: none;
+  border-color: transparent;
+}
+body .header .container .nav .list li .nav__transl option {
+  font-size: 18px;
+  font-family: "Lora", sans-serif;
+}
 body .main .container .hero {
   display: flex;
   justify-content: space-around;
