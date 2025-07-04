@@ -237,9 +237,10 @@ body .main .container .projects .projects__box .projects__item .projects__subtit
 }
 body .main .container .projects .projects__box .projects__item .projects__link {
   display: block;
-  width: 100px;
+  max-width: 9.375rem;
+  height: auto;
   align-self: flex-end;
-  padding: 10px 20px;
+  padding: 0.625rem 1.25rem;
   background-color: rgba(23, 72, 131, 0.9725490196);
   text-align: center;
   border-radius: 25px;

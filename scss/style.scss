@@ -257,9 +257,10 @@ body {
                         }
                         .projects__link {
                             display: block;
-                            width: 100px;
+                            max-width: 9.375rem;
+                            height: auto;
                             align-self: flex-end;
-                            padding: 10px 20px;
+                            padding: .625rem 1.25rem;
                             background-color: #174883f8;
                             text-align: center;
                             border-radius: 25px;
