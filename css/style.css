@@ -21,6 +21,7 @@ body {
   max-width: 90rem;
   margin: 0 auto;
   padding: 0rem 2.5rem;
+  overflow: hidden;
 }
 
 a {
@@ -70,11 +71,13 @@ body .header .container .nav .list li .link {
   font-family: "PlayfairDisplay", sans-serif;
   font-weight: 600;
   color: rgba(5, 20, 39, 0.9725490196);
+  color: rgba(82, 80, 80, 0.9529411765);
   transition: all 0.5s ease;
 }
 body .header .container .nav .list li .link:hover {
   transform: scale(1.5);
-  color: rgba(158, 158, 158, 0.9529411765);
+  color: rgba(0, 4, 10, 0.9725490196);
+  filter: drop-shadow(5px 5px 3px rgba(3, 3, 32, 0.7));
 }
 body .header .container .nav .list li .nav__transl {
   appearance: none;
@@ -82,10 +85,17 @@ body .header .container .nav .list li .nav__transl {
   background-color: transparent;
   font-size: 18px;
   font-family: "Lora", sans-serif;
+  cursor: pointer;
+  transition: all 0.5s ease;
+  color: rgba(82, 80, 80, 0.9529411765);
 }
 body .header .container .nav .list li .nav__transl:focus {
   outline: none;
   border-color: transparent;
+}
+body .header .container .nav .list li .nav__transl:hover {
+  color: rgba(0, 4, 10, 0.9725490196);
+  filter: drop-shadow(5px 5px 3px rgba(3, 3, 32, 0.7));
 }
 body .header .container .nav .list li .nav__transl option {
   font-size: 18px;
@@ -101,6 +111,7 @@ body .main .container .hero .hero__text h1 {
   color: rgba(5, 20, 39, 0.9725490196);
   font-size: 3rem;
   font-weight: normal;
+  margin-bottom: 20px;
 }
 body .main .container .hero .hero__text p {
   color: rgba(5, 20, 39, 0.9725490196);
@@ -127,6 +138,7 @@ body .main .container .about-me .about-me__box .about-me__text {
   z-index: 100;
 }
 body .main .container .about-me .about-me__box .about-me__text p {
+  margin-bottom: 0.9375rem;
   font-size: 1.5625rem;
   line-height: 1.5;
   color: #e0dada;
