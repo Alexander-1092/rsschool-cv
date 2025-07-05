@@ -53,6 +53,12 @@ body {
     background:
         linear-gradient(rgba(255, 255, 255, 0.527), rgba(255, 255, 255, 0.411)),
         url(/assets/img/main/main9.jpg) no-repeat center center / cover;
+    @media (max-width: 680px) {
+        font-size: 0.875rem;
+    }
+    @media (max-width: 560px) {
+        font-size: 0.75rem;
+    }
     .header {
         position: fixed;
         top: 0;
@@ -86,11 +92,17 @@ body {
                             appearance: none;
                             border: none;
                             background-color: transparent;
-                            font-size: 18px;
+                            font-size: 1.125rem;
                             font-family: "Lora", sans-serif;
                             cursor: pointer;
                             transition: all 0.5s ease;
                             color: #525050f3;
+                            @media (max-width: 680px) {
+                                font-size: 0.875rem;
+                            }
+                            @media (max-width: 560px) {
+                                font-size: 0.75rem;
+                            }
                             &:focus {
                                 outline: none;
                                 border-color: transparent;
@@ -100,8 +112,14 @@ body {
                                 filter: drop-shadow(5px 5px 3px rgba(3, 3, 32, 0.7));
                             }
                             option {
-                                font-size: 18px;
+                                font-size: 1.125rem;
                                 font-family: "Lora", sans-serif;
+                                @media (max-width: 680px) {
+                                    font-size: 0.875rem;
+                                }
+                                @media (max-width: 560px) {
+                                    font-size: 0.75rem;
+                                }
                             }
                         }
                     }
@@ -116,12 +134,16 @@ body {
                 justify-content: space-around;
                 align-items: center;
                 margin: 6.25rem 0rem;
+                @media (max-width: 800px) {
+                    flex-direction: column;
+                    flex-direction: column-reverse;
+                }
                 .hero__text {
                     h1 {
                         color: #051427f8;
                         font-size: 3rem;
                         font-weight: normal;
-                        margin-bottom: 20px;
+                        margin-bottom: 1.25rem;
                     }
                     p {
                         color: #051427f8;
@@ -132,12 +154,29 @@ body {
                     img {
                         border-radius: 11.25rem;
                         max-width: 25rem;
+                        @media (max-width: 740px) {
+                            margin-bottom: 3rem;
+                        }
+                        @media (max-width: 450px) {
+                            max-width: 20rem;
+                        }
                     }
                 }
             }
             .about-me {
                 scroll-margin-top: 3.125rem;
                 margin-bottom: 6.25rem;
+                @media (max-width: 750px) {
+                    margin-bottom: 5rem;
+                }
+                @media (max-width: 540px) {
+                    margin-bottom: 3.125rem;
+                }
+                .about-me__title {
+                    @media (max-width: 640px) {
+                        margin-bottom: 0;
+                    }
+                }
                 .about-me__box {
                     position: relative;
                     display: flex;
@@ -145,12 +184,16 @@ body {
                     align-items: center;
                     flex-direction: row-reverse;
                     overflow: hidden;
-
                     .about-me__text {
                         position: relative;
                         z-index: 100;
+                        @media (max-width: 680px) {
+                            position: absolute;
+                        }
                         p {
-                            margin-bottom: .9375rem;
+                            text-align: justify;
+                            text-indent: 10px;
+                            margin-bottom: 0.9375rem;
                             font-size: 1.5625rem;
                             line-height: 1.5;
                             color: #e0dada;
@@ -169,6 +212,9 @@ body {
                                 position: relative;
                                 transform: rotate(25deg) translate(1.875rem, 0rem);
                                 z-index: 2;
+                                @media (max-width: 680px) {
+                                    transform: rotate(25deg) translate(0rem, 7rem);
+                                }
                             }
                             &:nth-of-type(2) {
                                 position: relative;
@@ -194,10 +240,22 @@ body {
             .skills {
                 scroll-margin-top: 3.125rem;
                 margin-bottom: 6.25rem;
+                @media (max-width: 750px) {
+                    margin-bottom: 5rem;
+                }
+                @media (max-width: 540px) {
+                    margin-bottom: 3.125rem;
+                }
                 .skills__box {
                     display: grid;
                     grid-template-columns: repeat(4, 1fr);
                     grid: 0.625rem;
+                    @media (max-width: 600px) {
+                        grid-template-columns: repeat(3, 1fr);
+                    }
+                    @media (max-width: 480px) {
+                        grid-template-columns: repeat(2, 1fr);
+                    }
                     .skills__item {
                         display: flex;
                         flex-direction: column;
@@ -214,11 +272,18 @@ body {
             .code {
                 scroll-margin-top: 3.125rem;
                 margin-bottom: 6.25rem;
+                @media (max-width: 750px) {
+                    margin-bottom: 5rem;
+                }
+                @media (max-width: 540px) {
+                    margin-bottom: 3.125rem;
+                }
                 .code__box {
                     padding: 6.25rem 0rem;
                     position: relative;
                     border-radius: 1.25rem;
                     overflow: hidden;
+
                     .code__video {
                         position: absolute;
                         top: 0;
@@ -228,6 +293,7 @@ body {
                         opacity: 0.5;
                         width: 100%;
                         height: 100%;
+
                         video {
                             width: 100%;
                             height: 100%;
@@ -245,6 +311,18 @@ body {
                             z-index: 5;
                             font-size: 1.5rem;
                             color: #ffffff;
+                            @media (max-width: 850px) {
+                                font-size: 1rem;
+                            }
+                            @media (max-width: 590px) {
+                                font-size: 0.8rem;
+                            }
+                            @media (max-width: 590px) {
+                                font-size: 0.7rem;
+                            }
+                            @media (max-width: 435px) {
+                                font-size: 0.6rem;
+                            }
                         }
                     }
                 }
@@ -252,11 +330,20 @@ body {
             .projects {
                 scroll-margin-top: 3.125rem;
                 margin-bottom: 6.25rem;
+                @media (max-width: 750px) {
+                    margin-bottom: 5rem;
+                }
+                @media (max-width: 540px) {
+                    margin-bottom: 3.125rem;
+                }
                 .projects__box {
                     display: grid;
                     grid-template-columns: repeat((2, 1fr));
                     grid-auto-rows: 1fr;
                     gap: 1.25rem;
+                    @media (max-width: 850px) {
+                        grid-template-columns: minmax(12.5rem, 1fr);
+                    }
                     .projects__item {
                         display: flex;
                         flex-direction: column;
@@ -302,9 +389,15 @@ body {
                 }
             }
             .education {
+                margin-bottom: 6.25rem;
                 scroll-margin-top: 3.125rem;
                 // background: url(../assets/img/education/yale-university-0.jpg) no-repeat center center / cover;
-
+                @media (max-width: 750px) {
+                    margin-bottom: 5rem;
+                }
+                @media (max-width: 540px) {
+                    margin-bottom: 3.125rem;
+                }
                 .education__table {
                     width: 100%;
                     margin-bottom: 1.875rem;
@@ -341,11 +434,20 @@ body {
             .contact {
                 scroll-margin-top: 3.125rem;
                 margin-bottom: 6.25rem;
+                @media (max-width: 750px) {
+                    margin-bottom: 5rem;
+                }
+                @media (max-width: 540px) {
+                    margin-bottom: 3.125rem;
+                }
                 .contact__list {
                     display: grid;
                     grid-template-columns: repeat(2, 1fr);
                     gap: 1.25rem;
                     align-items: center;
+                    @media (max-width: 450px) {
+                        grid-template-columns: repeat(1, 1fr);
+                    }
                     .contact__item {
                         display: flex;
                         flex-direction: column;
@@ -363,6 +465,9 @@ body {
                     }
                     & > li:nth-child(3) {
                         justify-self: start;
+                        @media (max-width: 450px) {
+                            justify-self: center;
+                        }
 
                         img {
                             width: 12.5rem;
@@ -370,6 +475,9 @@ body {
                     }
                     & > li:nth-child(4) {
                         justify-self: end;
+                        @media (max-width: 450px) {
+                            justify-self: center;
+                        }
                     }
                     & > li:nth-child(-n + 3):hover {
                         transform: scale(1.3);
