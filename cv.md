@@ -14,5 +14,5 @@ function sortCitiesArray(arr) {
 }
 ```
 6. I have been independently studying the frontend for over a year. An example of a learning project I did
-7. Master of Religious Science
+7. Master of Religious Science (KFU)
 8. А2
